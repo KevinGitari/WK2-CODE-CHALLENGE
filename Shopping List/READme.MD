@@ -8,5 +8,7 @@ Features
  3. Edit items: Edit names directly in the list.
  4. Clear the list: Remove all items at once.
 
- SETUP
-  
+ INSTALLATION
+ 1. Open your terminal
+ 2.Change your directory to the desired one whilst in the terminal
+ 3. Clone the repository choosen in your terminal

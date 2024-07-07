@@ -29,7 +29,7 @@ function renderlist() {
 
         li.appendChild(ActionsDiv)
         SHOPPINGLISTcontainer.appendChild(li)
+         }
 
 
      });
-}
