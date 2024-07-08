@@ -1,4 +1,4 @@
-document.addEventListener('DOMcontentLoaded'),() => (
+document.addEventListener('DOMContentLoaded'),() => (
     let SHOPPING LIST = JSON.parse (localstorage.getItem('SHOPPING LIST')) [];
 
 const iteminput = document.getElementById ('item-input');
