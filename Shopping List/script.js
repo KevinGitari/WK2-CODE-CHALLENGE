@@ -18,17 +18,23 @@ function renderlist() {
         const toggle button = document.createElement('button');
         toggleButton.textcontent = itempurchased 'unmark' : 'mark';
         toggleButton.addEventListener 'click',() => togglepurchased (index);
+        ActionsDiv.appendChild(toggleButton );
+        
 
         const edit button = document.createElement ('button');
         edit.Buttontextcontent = 'edit';
         edit.Button.addEventListener('click',() => edititem(index) );
+        ActionsDiv.appendChild(editButton)
 
-        ActionsDiv.appendChild(toggleButton );
-        ActionsDiv.appendChild(editButton);
-        ActionsDiv.appendChild(deleteButton);
+        
+       const deleteButton = document.createElement('button');
+       deleteButton.text = 'delete';
+       deleteButton.addEventListener('click', ()=>deleteItem(index));
+       ActionsDiv.appendChild(deleteButton);
 
-        li.appendChild(ActionsDiv)
-        SHOPPINGLISTcontainer.appendChild(li)
+    
+        li.appendChild(ActionsDiv);
+        SHOPPINGLISTcontainer.appendChild(li);
          }
 
 
