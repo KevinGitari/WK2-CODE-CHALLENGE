@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    let shoppingList = JSON.parse(localStorage.getItem('SHOPPING_LIST')) || [];
+    let shoppingList;
+{
+    const storedShoppingList = localStorage.getItem('SHOPPING_LIST');
+    shoppingList = storedShoppingList ? JSON.parse(storedShoppingList) : [];
+} catch (error) {
+    console.error('Error parsing shopping list from localStorage:', error);
+    shoppingList = []; // Fallback to an empty array on error
+}
+
 
     const itemInput = document.getElementById('item-input');
     const addButton = document.getElementById('add-button');
